@@ -2,11 +2,103 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <title>Кэт энерджи</title>
   </head>
   <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <!-- Здесь, скорее всего, нужно будет хитрее сделать с двумя изображениями, дальше видно будет -->
+        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Кэт энерджи">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          Открыть меню
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <section class="promo">
+        <h1 class="promo__title">Функциональное питание для котов</h1>
+        <p class="promo__description">Занялся собой? Займись котом!</p>
+        <img class="promo__image" src="https://via.placeholder.com/150x150" alt="Функциональное питание для котов">
+        <a class="promo__program-button" href="form.html">Подобрать программу</a>
+      </section>
 
+      <section class="catalog-list">
+        <h2 class="visually-hidden">Список каталогов питания</h2>
+        <div class="catalog-list__wrapper">
+          <div class="catalog-list__item">
+            <div class="catalog-list__title">Похудение</div>
+            <div class="catalog-list__description">
+              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+            </div>
+            <a class="catalog-list__to-catalog-button" href="catalog.html">Каталог Slim</a>
+          </div>
+          <div class="catalog-list__item">
+            <div class="catalog-list__title">Набор массы</div>
+            <div class="catalog-list__description">
+              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </div>
+            <a class="catalog-list__to-catalog-button" href="catalog.html">Каталог Pro</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works">
+        <h2 class="how-it-works__title">Как это работает</h2>
+        <ul class="how-it-works__list">
+          <li class="how-it-works__item how-it-works__item--nutrients">Функциональное питание содержит только полезные питательные вещества.</li>
+          <li class="how-it-works__item how-it-works__item--comfort">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+          <li class="how-it-works__item how-it-works__item--replace">Замените один-два приема обычной еды на наше функциональное питание.</li>
+          <li class="how-it-works__item how-it-works__item--results">Замените один-два приема обычной еды на наше функциональное питание.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__item page-footer__item--logo">
+        <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Кэт энерджи">
+      </div>
+
+      <div class="page-footer__item page-footer__item--social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__item page-footer__item--copyright copyright">
+        <div class="copyright__link copyright__link--text">
+          HTML Academy
+        </div>
+        <div class="copyright__link copyright__link--logo">
+          <!-- Пока поместил лого в виде голого svg сюда. Возможно, позже может будет сделать красивее с применением сборщика. -->
+          <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
+            <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
+          </svg>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
